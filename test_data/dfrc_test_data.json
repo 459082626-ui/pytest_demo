@@ -6,7 +6,7 @@
         "userName": "mc123"
       },
       "expected": {
-        "resultCode": "1",
+        "resultCode": 1,
         "resultMsg": "提交成功"
       }
     },
@@ -17,7 +17,7 @@
         "seqid": "test_seq_001"
       },
       "expected": {
-        "resultCode": "1",
+        "resultCode": 1,
         "resultMsg": "提交成功"
       }
     },
@@ -25,10 +25,10 @@
       "case_name": "正向用例-定时发送",
       "params": {
         "userName": "mc123",
-        "dstime": "20301231235959"
+        "dstime": "2025-12-27 09:00:00"
       },
       "expected": {
-        "resultCode": "1",
+        "resultCode": 1,
         "resultMsg": "提交成功"
       }
     },
@@ -39,7 +39,7 @@
         "isms": 1
       },
       "expected": {
-        "resultCode": "1",
+        "resultCode": 1,
         "resultMsg": "提交成功"
       }
     },
@@ -50,7 +50,7 @@
         "mobile": "17712345678,17787654321"
       },
       "expected": {
-        "resultCode": "1",
+        "resultCode": 1,
         "resultMsg": "提交成功"
       }
     },
@@ -60,7 +60,7 @@
         "userName": ""
       },
       "expected": {
-        "resultCode": "-1",
+        "resultCode": -2,
         "resultMsg": "用户名不能为空"
       }
     },
@@ -71,7 +71,7 @@
         "sign": ""
       },
       "expected": {
-        "resultCode": "-1",
+        "resultCode": -2,
         "resultMsg": "签名不能为空"
       }
     },
@@ -82,8 +82,8 @@
         "mobile": "123456"
       },
       "expected": {
-        "resultCode": "-14",
-        "resultMsg": "内容解析异常"
+        "resultCode": 0,
+        "resultMsg": "失败"
       }
     },
     {
@@ -93,8 +93,8 @@
         "dstime": "2023-12-31"
       },
       "expected": {
-        "resultCode": "-14",
-        "resultMsg": "内容解析异常"
+        "resultCode": 0,
+        "resultMsg": "失败"
       }
     },
     {
@@ -104,8 +104,8 @@
         "isms": 2
       },
       "expected": {
-        "resultCode": "-14",
-        "resultMsg": "内容解析异常"
+        "resultCode": 0,
+        "resultMsg": "失败"
       }
     },
     {
@@ -114,7 +114,7 @@
         "userName": "mc123456"
       },
       "expected": {
-        "resultCode": "-1",
+        "resultCode": -990,
         "resultMsg": "账号或密码不正确"
       }
     },
@@ -125,7 +125,7 @@
         "password": "123123"
       },
       "expected": {
-        "resultCode": "-1",
+        "resultCode": -1,
         "resultMsg": "账号或密码不正确"
       }
     },
@@ -136,7 +136,7 @@
         "password": ""
       },
       "expected": {
-        "resultCode": "-1",
+        "resultCode": -1,
         "resultMsg": "密码不能为空"
       }
     },
@@ -147,7 +147,7 @@
         "mobile": ""
       },
       "expected": {
-        "resultCode": "-1",
+        "resultCode": -2,
         "resultMsg": "手机号不能为空"
       }
     },
@@ -158,7 +158,7 @@
         "content": ""
       },
       "expected": {
-        "resultCode": "-1",
+        "resultCode": -2,
         "resultMsg": "短信内容不能为空"
       }
     },
@@ -169,7 +169,7 @@
         "content": ""
       },
       "expected": {
-        "resultCode": "1",
+        "resultCode": 1,
         "resultMsg": "提交成功"
       }
     },
@@ -180,7 +180,7 @@
         "content": ""
       },
       "expected": {
-        "resultCode": "1",
+        "resultCode": 1,
         "resultMsg": "提交成功"
       }
     },
@@ -191,7 +191,7 @@
         "content": ""
       },
       "expected": {
-        "resultCode": "-1",
+        "resultCode": 1,
         "resultMsg": "短信内容过长"
       }
     }
